@@ -1,0 +1,16 @@
+<!-- /***********************************
+; Title:  leadley-assignment-3.3
+; Author: Kurt Leadley
+; Date:    20 January 2020
+; Description: Passing data to routes
+*********************************/ -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <!-- found this router syntax on the bellevue git account
+    https://github.com/buwebdev/web-425/blob/master/week-3/query-params/src/app/app.component.html-->
+    <li class="nav-item"><a [routerLink]="['/']" class="nav-link">Home</a></li>
+    <li class="nav-item"><a [routerLink]="['/product', productId]" class="nav-link">Products</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+

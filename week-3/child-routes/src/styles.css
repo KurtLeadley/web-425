@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+p,h1,h2,h3,h4 {
+  padding:5px 15px;
+  color: #fff;
+
+}
+p {
+  font-size: 22px;
+}
+.home-container, .product {
+  background-color:#416f75;
+  margin: 0 30px;
+}
+.home-container, .product a {
+  color: #fab35f;
+}
+
+:host p {
+  background: #ada397;
+}
