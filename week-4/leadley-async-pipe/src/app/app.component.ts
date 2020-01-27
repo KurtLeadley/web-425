@@ -15,6 +15,13 @@ import {Observable} from "rxjs";
 @Component({
   selector: 'app-root',
   template: `
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
     <div class="main-container">
       <h1>Kurt's Produce Store</h1>
       <table class="table table-dark">

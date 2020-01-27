@@ -1,9 +1,6 @@
-body {
-  background-color: #065471 !important ;
-}
 .main-container {
   margin:0 30px 0 30px;
 }
-h1, table {
+table {
   margin:15px 0;
 }
