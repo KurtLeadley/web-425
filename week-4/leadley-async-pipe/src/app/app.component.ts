@@ -29,7 +29,7 @@ import {Observable} from "rxjs";
           <tr>
             <th>Id</th>
             <th>Name</th>
-            <th>Price</th>
+            <th>Price/lb</th>
             <th>Quantity</th>
           </tr>
         </thead>
