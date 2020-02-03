@@ -1,0 +1,9 @@
+.menu {
+  width:100%;
+  position: fixed;
+  background-color:#0277BD !important;
+  color: #fff;
+  padding: 0;
+  top:0;
+}
+

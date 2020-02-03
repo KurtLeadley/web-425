@@ -1,0 +1,18 @@
+<!--
+Author: Kurt Leadley
+Date: 2/3/2020
+Description: Nav template for all pages
+-->
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <!-- don't forget the routerLink to link to the app-routing-module-->
+    <button mat-button class="mat-button" routerLink="/home">
+      Home
+    </button>
+    <button mat-button class="mat-button" routerLink="/login">
+      Login
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- place this in the router outlet-->
+<router-outlet></router-outlet>

@@ -1,0 +1,65 @@
+/*
+Author: Kurt Leadley
+Date: 2/3/2020
+Description: Styles for login page
+*/
+.wrapper {
+  padding:60px 60px 0;
+  display: block;
+}
+.left-grid {
+  background-color: #0277BD;
+  color: #fff;
+}
+.right-grid {
+  background-color: #0277BD;
+  color: #fff;
+}
+.active-li {
+  color: 		#77bd02;
+  font-weight: bolder;
+}
+.frm-login .mat-card {
+  margin: auto;
+  text-align: center;
+  background-color: #0277BD;
+}
+.right-grid .frm-login-panel {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "title title title"
+  "body body body"
+  ". actions actions";
+  row-gap: 15px;
+}
+.right-grid .frm-login-header {
+  grid-area: title;
+  justify-self: center;
+  width:100%;
+}
+
+.right-grid .frm-login-body {
+  grid-area: body;
+  justify-self: center;
+  width:100%;
+}
+.right-grid .frm-login-actions {
+  grid-area: actions;
+  justify-self: center;
+}
+
+/* non grid overrides */
+.mat-toolbar-row, .mat-toolbar-single-row {
+  margin:0 !important;
+}
+.mat-form-field {
+  display:block !important;
+}
+.mat-card-header {
+  display:block;
+}
+.mat-toolbar {
+  color:black;
+  background-color: #fff;
+}

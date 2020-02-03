@@ -1,0 +1,24 @@
+/*
+Author: Kurt Leadley
+Date: 2/3/2020
+Description: global styles for entire module
+*/
+/* colors
+#0277BD
+#69F0AE
+#0288D1
+#03A9F4
+*/
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+body {
+  margin:0 !important;
+}
+p {
+  font-size:20px;
+  padding:5px 15px;
+}
+li {
+  font-size:20px;
+  padding:5px 15px;
+}

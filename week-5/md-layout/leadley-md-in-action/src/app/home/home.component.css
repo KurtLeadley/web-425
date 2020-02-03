@@ -1,0 +1,21 @@
+/*
+Author: Kurt Leadley
+Date: 2/3/2020
+Description: Styles for home page
+*/
+.wrapper {
+  padding:60px 60px 0;
+  display: block;
+}
+.left-grid {
+  background-color: #0277BD;
+  color: #fff;
+}
+.right-grid {
+  background-color: #0277BD;
+  color: #fff;
+}
+.active-li {
+  color: 		#77bd02;
+  font-weight: bolder;
+}
