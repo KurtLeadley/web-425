@@ -1,0 +1,45 @@
+/*
+Author: Kurt Leadley
+Date: 2/15/2020
+Description: Main component CSS
+Assignment 6.4
+*/
+.menu {
+    background-color:#46b4a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
+}
+.mat-button {
+    margin: 0 10px;
+    background-color:#fff;
+    color: #000;
+    padding: 5px 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "side main-top"
+        "side main-bottom";
+    column-gap: 30px;
+    row-gap:30px;
+    grid-template-columns: 1fr 3fr;
+    margin:90px 30px 0px 30px;
+}
+.right-grid-top, .right-grid-bottom, .left-grid {
+    padding:10px 15px;
+}
+.left-grid {
+    grid-area: side;
+    background-color:#46b4a6;
+}
+.right-grid-top {
+    grid-area: main-top;
+    background-color:#46b4a6;
+}
+.right-grid-bottom {
+    grid-area: main-bottom;
+    background-color: #46b4a6;
+}

@@ -1,0 +1,34 @@
+<!--
+Author: Kurt Leadley
+Date: 2/15/2020
+Description: Parent component template
+Assignment 6.4
+-->
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="mat-button">
+      Home
+    </button>
+    <button mat-button class="mat-button">
+      Login
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="grid-container">
+  <div class="left-grid">
+    <p>Sidebar</p>
+  </div>
+  <div class="right-grid-top">
+    <h2>Parent</h2>
+    <div class="input-field">
+      Greeting: <input type="text" [(ngModel)] = "myGreeting">
+    </div>
+    <div class="input-field">
+      User Name: <input type="text" [(ngModel)] = "myUser.fname">
+    </div>
+  </div>
+  <div class="right-grid-bottom">
+    <!-- selector for the child component -->
+    <app-child [greeting]="myGreeting" [user] = "myUser"></app-child>
+  </div>
+</div>
