@@ -1,0 +1,17 @@
+.grid-container {
+  margin: 30px 0;
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.left-grid, .right-grid, .menu {
+  background-color: bisque;
+  padding:15px;
+}
+.error {
+  color:red;
+}
+.hasError {
+  border: 1px solid red;
+}

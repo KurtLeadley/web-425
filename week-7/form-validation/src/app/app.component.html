@@ -1,0 +1,40 @@
+<!--
+Author: Kurt Leadley
+Date: 2/15/2020
+Description: Form Example with template-driven form API
+Assignment 7.2
+-->
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="mat-button">
+      Home
+    </button>
+    <button mat-button class="mat-button">
+      Login
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="grid-container">
+  <div class="left-grid">
+    <p>Sidebar</p>
+  </div>
+  <div class="right-grid">
+    <form #f="ngForm" (ngSubmit) = "onSubmit(f.value)">
+      <div>Phone Number:
+        <input type="text" name="telephone" ngModel
+          required
+          pattern="[0-9]*"
+          minlength="10"
+          #phone="ngModel"
+          [class.hasError] = "phone.isvalid && phone.touched">
+      </div>
+      <div [hidden] = "phone.valid || phone.pristine">
+        <div class="error" [hidden]="!phone.hasError('minlength')">Phone # needs 10 digits</div>
+        <div class="error" [hidden]="!phone.hasError('required')">You must enter a phone #</div>
+        <div class="error" [hidden]="!phone.hasError('pattern')">Only Digits are allowed</div>
+      </div>
+      <button type="submit" [disabled] = "f.invalid">Submit</button>
+    </form>
+  </div>
+</div>
+
