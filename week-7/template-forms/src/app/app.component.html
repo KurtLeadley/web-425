@@ -1,0 +1,32 @@
+<!--
+Author: Kurt Leadley
+Date: 2/15/2020
+Description: Parent component template
+Assignment 6.4
+-->
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="mat-button">
+      Home
+    </button>
+    <button mat-button class="mat-button">
+      Login
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="grid-container">
+  <div class="left-grid">
+    <p>Sidebar</p>
+  </div>
+  <div class="right-grid">
+    <form #f="ngForm" (ngSubmit) = "onSubmit(f.value)">
+      <div>Username: <input type="text" name="username" ngModel></div>
+      <div>SSN: <input type="text" name="ssn" ngModel></div>
+      <div ngModelGroup = "passwordsGroup">
+        <div>Password: <input type="password" name="password" ngModel></div>
+        <div>Confirm Password: <input type="password" name="pconfirm" ngModel></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
