@@ -1,0 +1,33 @@
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="mat-button">
+      <a routerLink="/home">Home</a>
+    </button>
+    <button mat-button class="mat-button">
+      <a routerLink="/about">About</a>
+    </button>
+    <button mat-button class="mat-button">
+      <a routerLink="/order">Place Order</a>
+    </button>
+    <button mat-button class="mat-button">
+      <a routerLink="/admin">Admin</a>
+    </button>
+    <button mat-button class="mat-button">
+      <a routerLink="/login">Log In</a>
+    </button>
+    <button mat-button class="mat-button">
+      <a routerLink="/register">Register</a>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="banner">
+  <img src="/assets/images/ucr-logo.png">
+  <h1>Upstate Computer Repair</h1>
+</div>
+<router-outlet></router-outlet>
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <p>footer</p>
+  </mat-toolbar-row>
+</mat-toolbar>
+

@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.banner {
+  background-color: #6ea3a9;
+  display:grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 30px;
+  align-items: center;
+}
+.container-grid {
+  margin: 0 60px;
+  display:grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 30px;
+}
+.side-bar, .main-content {
+  background-color: #E1E2E1;
+  padding: 15px 10px;
+}
+.menu {
+  background-color: #3f747a !important ;
+}
+h1 {
+  color: #e53835;
+  text-align: center;
+  font-size: 62px !important;
+  align-items: center;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+a:hover {
+  color: #e53835 !important;
+}

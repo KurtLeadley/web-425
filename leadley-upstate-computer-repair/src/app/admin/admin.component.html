@@ -1,0 +1,55 @@
+<div class = "container-grid">
+  <div class = "side-bar">
+    <p>Sidebar</p>
+  </div>
+  <div class = "main-content">
+    <form #productForm="ngForm"   (ngSubmit)="onSave(productForm.value, true)" novalidate>
+      <p>Is "myForm" valid? {{productForm.valid}}</p>
+      <table border='1'>
+      <tr>
+        <td>Item Id</td>
+        <td>
+            <input name="id" type="hidden"  [(ngModel)]="id" />
+            <input name="item_id" type="text"  required  [(ngModel)]="item_id" />
+        </td>
+      </tr>
+      <tr>
+          <td>Service Name</td>
+          <td>
+            <input name="service_name" required  type="text"  [(ngModel)]="service_name" />
+          </td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>
+          <input name="price" required  type="text"  [(ngModel)]="price" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="{{valbutton}}" />
+        </td>
+      </tr>
+      </table>
+    </form>
+
+    <table border='1'>
+      <tr>
+        <td>Id</td>
+        <td>Item Id</td>
+        <td>Service Name</td>
+        <td>Price</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tr *ngFor="let prd of productData; let ind = index">
+        <td>{{ind + 1}}</td>
+        <td>{{prd.item_id}}</td>
+        <td>{{prd.service_name}}</td>
+        <td>{{prd.price}}</td>
+        <td><a (click)="edit(prd)">Edit</a></td>
+        <td><a (click)="delete(prd._id)">Delete</a>  </td>
+      </tr>
+    </table>
+  </div>
+</div>

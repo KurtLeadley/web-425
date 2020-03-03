@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>120</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>User
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>120</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Order
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>140</y>
+      <w>340</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>A User can have 0 to many Orders
+m1=1.1
+m2=0.*
+An Order belongs to only one User</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>230</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Service
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>250</y>
+      <w>340</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>An Order can have 1 to many Services
+m1=0.*
+m2=1.*
+A Service can have 0 to many Orders</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>230</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Order
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

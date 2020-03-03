@@ -1,0 +1,30 @@
+// Service
+{
+  "item_id" : 1,
+  "service_name" : "Spyware Removal",
+  "price" : 9.99
+}
+// User
+{
+  "first_name" : "Kurt",
+  "last_name" : "Leadley",
+  "email" : "kleadley@my365.bellevue.com",
+  "user_name" : "kgl12",
+  "password" : "somehashedpw",
+  "is_admin" : 1,
+  "orders" : [
+    {
+      "order_id" : "kgl12_1",
+      "date" : "2020-02-29T20:44:55",
+      "items" : [1,2,3],
+      "hours_taken" : 4
+    },
+    {
+      "order_id" : "kgl12_2",
+      "date" : "2020-03-28T19:44:50",
+      "items" : [2,6],
+      "hours_taken" : 1
+    }
+  ]
+}
+
