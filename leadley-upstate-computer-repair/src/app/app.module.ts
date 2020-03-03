@@ -1,3 +1,9 @@
+/***********************************
+; Title:  app.module.ts
+; Author: Kurt Leadley
+; Date:   March 2, 2020
+; Description: Application main module
+***************************************************************/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,7 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import all our routes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,6 +48,7 @@ import {ProductService} from './product.service';
     MatMenuModule,
     MatButtonModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [ProductService],

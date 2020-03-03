@@ -1,3 +1,9 @@
+/***********************************
+; Title:  app.module.ts
+; Author: Kurt Leadley
+; Date:   March 2, 2020
+; Description: Routing Module
+***************************************************************/
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';

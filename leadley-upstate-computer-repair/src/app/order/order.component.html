@@ -1,8 +1,17 @@
 <div class = "container-grid">
   <div class = "side-bar">
-    <p>Sidebar</p>
+    <form #productForm="ngForm">
+      <div *ngFor="let prd of productData; let ind = index">
+        <label>
+          <input type="checkbox" [(ngModel)]="prd.checked"
+          name = productData value = {{prd.item_id}} />
+          {{prd.service_name}}  {{prd.price}}
+        </label>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
   </div>
-  <div class = "main-content">
-    <p>Sidebar</p>
+  <div class ="main-content" *ngFor="let selected of this.selectedOptions; let ind = index">
+    <p>{{this.selectedOptions.service_name}} </p>
   </div>
 </div>

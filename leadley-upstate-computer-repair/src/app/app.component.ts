@@ -1,3 +1,9 @@
+/***********************************
+; Title:  app.module.ts
+; Author: Kurt Leadley
+; Date:   March 2, 2020
+; Description: Application main component
+***************************************************************/
 import { Component, OnInit } from '@angular/core';
 
 @Component({

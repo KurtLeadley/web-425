@@ -1,3 +1,9 @@
+/***********************************
+; Title:  app.module.ts
+; Author: Kurt Leadley
+; Date:   March 2, 2020
+; Description: Node and Express boot
+***************************************************************/
 var express = require('express');
 var path = require("path");
 var bodyParser = require('body-parser');
@@ -49,6 +55,7 @@ app.post("/api/saveProduct",function(req,res) {
       }
       else {
           res.send({data:"Record has been Inserted..!!"});
+          console.log("updated record!");
       }
     });
   }
@@ -57,6 +64,7 @@ app.post("/api/saveProduct",function(req,res) {
     function(err,data) {
       if (err) {
         res.send(err);
+        console.log("updated record!");
       }
       else {
         res.send({data:"Record has been Updated..!!"});

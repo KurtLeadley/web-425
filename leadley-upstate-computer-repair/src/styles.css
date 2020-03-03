@@ -41,3 +41,12 @@ a{
 a:hover {
   color: #e53835 !important;
 }
+table {
+  margin:30px 0;
+}
+table td {
+  padding:10px;
+}
+table a {
+  color:#e53835;
+}

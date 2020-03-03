@@ -4,7 +4,7 @@
   </div>
   <div class = "main-content">
     <form #productForm="ngForm"   (ngSubmit)="onSave(productForm.value, true)" novalidate>
-      <p>Is "myForm" valid? {{productForm.valid}}</p>
+      <h2>Enter or Edit Products Here</h2>
       <table border='1'>
       <tr>
         <td>Item Id</td>
@@ -32,7 +32,7 @@
       </tr>
       </table>
     </form>
-
+    <h2>List of Products</h2>
     <table border='1'>
       <tr>
         <td>Id</td>
