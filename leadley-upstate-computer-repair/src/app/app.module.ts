@@ -27,6 +27,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 // import http service
 import {ProductService} from './product.service';
+// import pipe
+import { ProductPipe } from './product.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import {ProductService} from './product.service';
     OrderComponent,
     AdminComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductPipe
   ],
   imports: [
     AppRoutingModule,
