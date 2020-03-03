@@ -1,0 +1,9 @@
+{
+    "name": "ws-chat-server",
+    "description": "Websocket Example with Chat Application",
+    "private": true,
+    "scripts": {},
+    "dependencies": {
+        "ws": "^7.2.1"
+    }
+}
