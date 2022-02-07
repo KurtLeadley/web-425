@@ -15,6 +15,7 @@ import {ProductService} from '../product.service';
 export class OrderComponent implements OnInit {
 
   constructor(private newService :ProductService) {   }
+
   productData;
   service_name: string;
   price : number;

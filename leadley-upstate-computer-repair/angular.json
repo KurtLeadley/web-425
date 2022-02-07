@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "leadley-upstate-computer-repair"
+  "defaultProject": "leadley-upstate-computer-repair",
+  "cli": {
+    "analytics": "cf016086-7cd4-4f7f-9f4d-aeb2f9e3ae23"
+  }
 }

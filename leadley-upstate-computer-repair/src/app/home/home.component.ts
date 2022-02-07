@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// this is kurt leadley
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
